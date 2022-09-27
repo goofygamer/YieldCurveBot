@@ -30,6 +30,7 @@ def tweet(api: tweepy.API, message: str, image_path = None):
 
 if __name__ == '__main__':
     api = api()
+    graph.graphs()
     tweet(api, distance.days(), f"images/Graph{str(data.data.index[-1].date())}.png")
 
 
